@@ -53,9 +53,12 @@
     - 서브 도메인과 바운디드 컨텍스트의 분리:  각 팀의 KPI 별로 아래와 같이 관심 구현 스토리를 나눠가짐
 
 
-# 구현
+# 구현 (레파지토리)
 
-
+표예매 : https://github.com/naorange/ticketbook
+공연(음악회) 관리:   https://github.com/naorange/concert
+예매 상황 대시보드 :  https://github.com/naorange/dashboard
+게이트웨이:  https://github.com/naorange/gateway
 
 # 운영
 
