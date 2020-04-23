@@ -1,0 +1,68 @@
+SKademy (learningportal)
+port 정보
+
+courseregistration : 8081
+lecture : 8082
+payment : 8083
+dashboard : 8084
+
+DOCKER:  oranageworld - 2122DOCKER
+
+user24@gkn2021hotmail.onmicrosoft.com
+skcc123!
+
+
+사용자그룹:  skademy
+컨테이너레지스트리:  skademyacr
+쿠버네티스 클러스터:  skademyaks
+
+ AZURE 연결
+siege -c100 -t120S -r10 --content-type "application/json" 'http://52.231.118.204:8080/courseRegistrationSystems POST {"lectureId": 1}'
+
+
+admin24@gkn2021hotmail.onmicrosoft.com   / skcc1234!
+
+git remote add origin https://github.com/naorange/gateway.git
+git remote set-url origin https://github.com/naorange/gateway.git
+
+사용자그룹:  admin24
+컨테이너레지스트리:  admin24acr
+쿠버네티스 클러스터:  admin24aks
+
+admin24,admin24aks
+
+ticketbook:  8081
+concert:  8082
+dashboard:  8083
+
+
+#서비스:  음악회 표예매(예술의 전당) 시스템
+#개요:  예술의 전당 공연자가 음악회를 개설하면, 예술의 전당 고객이 음악회 표 예매를 진행하는 서비스.
+#시나리오:  공연자가 음악회를 개설한다. 예술의 전당 고객이 개설된 음악회 표를 예매하고, 해당 음악회의 수량을 변경한다. 고객이 예매한 표를 취소하면, 해당 음악회의 수량을 변경한다. 만약, 공연자가 음악회를 취소하면, 예매했던 고객의 표는 모두 취소된다.
+
+
+Eventstorming 결과
+http://msaez.io/#/storming/25xfhEqq7JS3ZlYEB44C4PN3dkT2/mine/d2a91ae4e123bd34d3b2fdd608ec8939/-M5VP2nfhFJ2OWxUwTE1
+
+내 레파지토리:
+https://github.com/naorange/ticketbook
+
+내가 만든 서비스에서 첫 이벤트를 생성(pub)하는 주소
+http post http://localhost:8081/ticket customerId=101 status='101ok' concertId=101
+
+게이트웨이: 주소    52.141.29.221
+http://52.141.29.221:8080/ticketBookSystems/
+
+클라우드 내 카프카 실행: 
+kubectl -n kafka exec -ti my-kafka-0 -- /usr/bin/kafka-console-consumer --bootstrap-server my-kafka:9092 --topic sac --from-beginning
+
+kubectl exec -it httpie bin/bash
+http post http://localhost:8081/ticket customerId=201 status='201ok' concertId=201
+http POST http://52.141.29.221:8080/ticket customerId=201 status='201ok' concertId=201
+httpie 내:     http POST http://52.141.29.221:8080/ticket customerId=201 status='201ok' concertId=201
+
+음악회 관리: https://github.com/naorange/concert
+표 예매: https://github.com/naorange/ticketbook
+예매 대시보드:  https://github.com/naorange/dashboard
+게이트웨이: https://github.com/naorange/gateway
+
